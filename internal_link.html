@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Another web page</title>
+    <style src="my_style: .css;">
+        @font-face {
+            /* Set the font name as special */
+            font-family: "zebra";
+            src: url("Workbench/Workbench-Regular-VariableFont_BLED\,SCAN.ttf");
+        }
+
+        /* set body background */
+        body {
+            background-color: rgb(89, 87, 87);
+        }
+
+        /* style p tag */
+        p {
+            margin-top: 25%;
+            text-align: center;
+            color: rgb(251, 183, 56);
+        }
+
+        /* style button tag */
+        button {
+            cursor: pointer;
+        }
+
+        /* style internal_link class */
+        .internal_link {
+            color: black;
+        }
+
+        .internal_link:hover {
+            color: #059862;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- use new font family -->
+    <p style="font-family: 'zebra';">Internal links are links between different pages within the same website,
+        using relative URLs, and this page
+        simulates
+        another pages within the same website.</p>
+
+    <p>click on this button to return to the main interface:<button>RETURN</button></p>
+
+    <script>
+        // back to the index.html
+        $(function () {
+            $('button').click(function () {
+                window.history.back();
+            })
+        })
+    </script>
+</body>
+<!-- This is the html file which to show the function of internal links-->
+
+</html>
